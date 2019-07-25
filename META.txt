@@ -1,0 +1,40 @@
+<meta>除了提供文档字符集、使用语言、作者等基本信息外，还涉及对关键词和网页等级的设定。
+
+
+META标签可分为两大部分：HTTP-EQUIV和NAME变量。
+
+HTTP实例
+
+HTML代码实例中有一项内容是
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+其作用是指定了当前文档所使用的字符编码为gb2312，也就是中文简体字符。根据这一行代码，浏览器就可以识别出这个网页应该用中文简体字符显示。类似地，如果将"gb2312"换为"big5"，就是我们熟知的中文繁体字符了。
+
+HTTP使用方法
+
+1、<meta http-equiv="Content-Type" content="text/html;charset=gb_2312-80">和<meta http-equiv="Content-Language" content="zh-CN">用以说明主页制作所使用的文字以及语言；又如英文是ISO-8859-1字符集，还有BIG5、utf-8、shift-Jis、Euc、Koi8-2等字符集；
+
+2、<meta http-equiv="Refresh" content="n;url=http://yourlink">定时让网页在指定的时间n内，跳转到你的页面；
+
+3、<meta http-equiv="Expires" content="Mon,12 May 2001 00:20:00 GMT">可以用于设定网页的到期时间，一旦过期则必须到服务器上重新调用。需要注意的是必须使用GMT时间格式；
+
+4、<meta http-equiv="Pragma" content="no-cache">是用于设定禁止浏览器从本地机的缓存中调阅页面内容，设定后一旦离开网页就无法从Cache中再调出；
+
+5、<meta http-equiv="set-cookie" content="Mon,12 May 2001 00:20:00 GMT">cookie设定，如果网页过期，存盘的cookie将被删除。需要注意的也是必须使用GMT时间格式；
+
+6、<meta http-equiv="Pics-label" content="">网页等级评定，在IE的internet选项中有一项内容设置，可以防止浏览一些受限制的网站，而网站的限制级别就是通过meta属性来设置的；
+
+7、<meta http-equiv="windows-Target" content="_top">强制页面在当前窗口中以独立页面显示，可以防止自己的网页被别人当作一个frame页调用；
+
+8、<meta http-equiv="Page-Enter" content="revealTrans（duration=10,transition= 50）">和<meta http-equiv="Page-Exit" content="revealTrans（duration=20，transition=6）">设定进入和离开页面时的特殊效果，这个功能即FrontPage中的"格式/网页过渡"，不过所加的页面不能够是一个frame页面。
+
+HTTP-EQUIV用于向浏览器提供一些说明信息，从而可以根据这些说明做出反应。HTTP-EQUIV其实并不仅仅只有说明网页的字符编码这一个作用，常用的HTTP-EQUIV类型还包括：网页到期时间、默认的脚本语言、默认的风格页语言、网页自动刷新时间等。
+
+description
+
+HTML代码实例中有关"description"的代码为：
+
+<meta name="description" content="网络营销教学网站提供《网络营销基础与实践》教学支持:网络营销课件,网络营销论文,网络营销实验教学,电子商务论文,网络营销与电子商务书籍等">
+
+"description"中的content="网页描述"，是对一个网页概况的介绍，这些信息可能会在搜索结果中出现，因此需要根据网页的实际情况来设计，尽量避免与网页内容不相关的“描述”，另外，最好对每个网页有自己相应的描述（至少是同一个栏目的网页有相应的描述），而不是整个网站都采用同样的描述内容，因为一个网站有多个网页，每个网页的内容肯定是不同的，如果采用同样的description，显然会有一些网页内容没有直接关系，这样不仅不利于搜索引擎对网页的排名，也不利于用户根据搜索结果中的信息来判断是否点击进入网站获取进一步的信息。

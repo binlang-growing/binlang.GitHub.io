@@ -1,0 +1,9 @@
+通过DOM，有以下4种方式直接获取HTMLElement对象：
+
+document.getElementById(elementID) ：获取指定ID的第一个元素。
+
+document.getElementsByName(className) ：获取一个class属性含有指定值的元素数组 。
+
+document.getElementsByName(nameValue) ：获取一个name属性为指定值的元素数组。
+
+document.getElementsByTagName(elementName)等方式来获取指定元素 ：获取一个指定元素名称的元素数组。
