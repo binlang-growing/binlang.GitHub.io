@@ -8,7 +8,9 @@ maximum-scale=1.0	表示最大的缩放比例
 user-scalable=no	表示用户是否可以调整缩放比例，值为”no”或”yes”
 <head> -->
 <title>主页</title>
-
+<link rel="stylesheet" type="text/css" href="/css/主页.css">
+<link rel="javascript" type="text/js" href="/js/主页.js">
+<link rel="javascript" type="text/js" href="/js/jquery-3.4.1.js">
 <!--<link rel="shortcut icon" type="/image/ico" href="/images/favicon.ico">
 <link rel="bookmark" type="/image/ico" href="/images/favicon.ico">
 <link rel="stylesheet" type="text/css" href="http://fanwen.28xl.com/images/v7/style.css">
@@ -79,26 +81,41 @@ document.write(today.getFullYear(),"年",today.getMonth()+1,"月",today.getDate(
 <style >
 	a {text-decoration:none}
 </style>
+ <!--          视频背景         -->
+
+<div class="homepage-hero-module">
+    <div class="video-container">
+      <div class="filter"></div>
+      <video autoplay loop muted playsinline src="PATH_TO_MP4" class="fillWidth"></video>
+      <div class="poster hidden">
+        <img src="PATH_TO_JPEG" alt="">
+      </div>
+    </div>
+  </div>
  
-<div style="font-size: 450% ;text-align: center; padding-top: 5%; font-family:MicroSoft YaHei">
+
+
+
+
+<div style="font-size: 350% ;text-align: center; padding-top: 5%; font-family:MicroSoft YaHei">
 <p>
 	<strong>
      李书斌的个人网页 
-     <p style="margin-bottom: 8%;font-size: 120%;">
+     <p style="margin-bottom: 8%;font-size: 100%;">
      	测试
      </p> 
     </strong>
 
 </p>
 </div>
-<div style="text-decoration:none outline: none;width: 12%;height: 70px;background-color: #faaa9b;text-align: center;margin: auto;">
+<div style="text-decoration:none outline: none;width: 150px;height: 70px;background-color: #faaa9b;text-align: center;margin: auto;">
 <a href="dingdian.html">
-	<div style="margin-top: 0; padding-top:10%;text-align: center; color: #f3391b;font-size: 130%;">
+	<div style="margin-top: 0; padding-top:11%;text-align: center; color: #f3391b;font-size: 130%;">
 	小说模块网页
-	</div>
+	</div>	
 </a>
 </div>
-<div style="background-color: grey;width: 100%;margin-top:5%;">
+<div style="background-color: grey;width: 100%;margin-top:16%;">
 <div style="padding-top: 1%; font-size: 200% ;text-align: center;  font-family: cursive" >
 	<p>
 		成年人的世界
