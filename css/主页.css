@@ -1,6 +1,6 @@
 /*主页视频背景*/
 .b{ position:relative; margin: auto;}
-.wenzi{position:absolute; z-index:100;margin: auto; }
+.wenzi{position:absolute; z-index:0;margin: auto; }
 .video-container {
     margin: auto;
     position: absolute;
