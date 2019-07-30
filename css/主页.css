@@ -1,13 +1,15 @@
 /*主页视频背景*/
-.b{ position:relative; }
-.wenzi{position:absolute; z-index:100; }
+.b{ position:relative; margin: auto;}
+.wenzi{position:absolute; z-index:100;margin: auto; }
 .video-container {
+    margin: auto;
     position: absolute;
     z-index: -9999;
     bottom: 0%;
     left: 0%;
     height: 100%;
     width: 100%;
-    overflow: hidden;
-    background: #000;
+   /* overflow: hidden;*/
+    background: #fff;
+    text-align: center;
   }
