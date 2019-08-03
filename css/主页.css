@@ -1,5 +1,7 @@
+	a {text-decoration:none}
+
 /*主页视频背景*/
-.b{ position:relative; margin: auto;}
+.video{ position:relative; margin: auto;}
 .wenzi{position:absolute; z-index:0;margin: auto; }
 .video-container {
     margin: auto;
@@ -9,7 +11,7 @@
     left: 0%;
     height:auto;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     background: #0ff;
     text-align: center;
     top: 0;

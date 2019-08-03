@@ -1,100 +1,30 @@
 <html >
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
 <meta charset="utf-8">
-<!-- width=device-width	width为设置layout viewport 的宽度，为一个正整数，”width-device”表示宽度是设备屏幕的宽度
-initial-scale=1.0	initial-scale为设置页面的初始缩放值，可以是一个带小数的数字，1.0就是占网页的100%
-minimum-scale=1.0	表示最小的缩放比例
-maximum-scale=1.0	表示最大的缩放比例
-user-scalable=no	表示用户是否可以调整缩放比例，值为”no”或”yes”
-<head> -->
+
+<head>
 <title>主页</title>
 <link rel="stylesheet" type="text/css" href="css/主页.css">
 <link rel="javascript" type="text/js" href="js/主页.js">
 <link rel="javascript" type="text/js" href="js/jquery-3.4.1.js">
-<!--<link rel="shortcut icon" type="/image/ico" href="/images/favicon.ico">
-<link rel="bookmark" type="/image/ico" href="/images/favicon.ico">
-<link rel="stylesheet" type="text/css" href="http://fanwen.28xl.com/images/v7/style.css">
-<link rel="stylesheet" type="text/css" href="http://fanwen.28xl.com/images/v7/cms.css"> -->
-<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="title" content="范文、范文之家、范文网、范文文档,超全的免费范文范例和样本资源网站！" />
-<meta name="keywords" content="范文,文档,范例,样本,免费范文,范文之家,范文网" />
-<meta name="description" content="范文之家、范文网致力于分享工作,管理,培训,人事规章,手册,招聘面试,职位描述,HR,财务,表格,计划,策略,营销,办公,制度,房地产,岗位职责,作文,报告,求职信,简历,评价,入党申请,入团申请等方面的范例和样本资源" /> -->
 
 <meta name="webname" content="小说" />
 </head>
 <body style="margin: 0;">
 
-<div id="b">
- <!-- <video autoplay="autoplay muted  loop " 
- style="
- margin:0;
- padding: 0;
- /*min-width: 100%;
- min-height: 100%;*/
- width: auto;
- height: auto;
- z-index:9;
- background: url(/images/动态背景资源\背景图片.jpg)
- no-repeat; 
- background-size: cover;
- ">
- 	<source src="C:\Users\Administrator\Documents\GitHub\binlang.github.io\images\动态背景资源\视频背景.mp4" type="">
- </video> -->
-
-
+<div id="video">
     <div class="video-container">
-      <div class="filter"></div>
-      <video autoplay loop muted playsinline src="images\动态背景资源\视频背景.mp4" class="fillWidth"> </video>
-      <!-- <div class="poster hidden">
-        <img src="C:\Users\Administrator\Documents\GitHub\binlang.github.io\images\动态背景资源\背景图片.jpg" alt="">
-      </div> -->
+      <video autoplay loop muted playsinline src="images\动态背景资源\视频背景.mp4"> </video>
     </div>
 
- 
-
-
-
-
-
-
-
 <div id="wenzi">
-<!-- <SCRIPT LANGUAGE="JavaScript">
-//屏蔽可忽略的js脚本错误
-function killErr(){
-	return true;
-}
-window.onerror=killErr;
-</SCRIPT>
-
-<SCRIPT LANGUAGE="JavaScript">
-//解决不同域名的框架跨域问题
-document.domain = "28xl.com";
-</SCRIPT>
- -->
-<!-- <SCRIPT LANGUAGE="JavaScript" src="http://fanwen.28xl.com/images/default/inc.js"></SCRIPT>
-<SCRIPT LANGUAGE="JavaScript" src="http://fanwen.28xl.com/images/default/default.js"></SCRIPT>
-<SCRIPT LANGUAGE="JavaScript" src="http://fanwen.28xl.com/images/default/swfobject.js"></SCRIPT>
-<SCRIPT LANGUAGE="JavaScript" src="http://fanwen.28xl.com/images/default/jquery-1.2.6.min.js"></SCRIPT> -->
-<!-- <body ondblclick=""> -->
-<!-- <table width="990" border="0" cellspacing="0" cellpadding="0" id="header_login">
-  <tr>
- <td class="login"> -->
-<!-- <SCRIPT LANGUAGE="JavaScript">
-document.write('<span id="head_loginer"><img alt="内容加载中,请稍候..." src="http://fanwen.28xl.com/images/default/ico_loading3.gif"></span>');
-document.write('<div style="display:none;"><iframe src="http://fanwen.28xl.com/do/hack.php?hack=login&styletype=v7&iframeID=head_loginer" width=0 height=0></iframe></div>');
-
-</SCRIPT>   -->  	
-<!-- <a href="http://www.28xl.com/do/job.php?job=down_encode&fid=2&id=19&rid=19&i_id=1&mid=101&field=softurl&ti=0"><img src="http://fanwen.28xl.com/images/haofav.ico" width="28" height="28" border="0" align="absmiddle">下载本站</a></td> -->
-    <!-- <td class="info"> -->
-
-<script language="JavaScript" style="padding-right: 100px;"> 
-<!---
+<!-- 时间显示块 -->
+<script language="JavaScript" style="padding-right: 100px;">
 today=new Date();
 var hours = today.getHours();
 var minutes = today.getMinutes();
 var seconds = today.getSeconds();
-var timeValue = ((hours >12) ? hours -12 :hours); 
+var timeValue = ((hours >12) ? hours -12 :hours);
 timeValue += ((minutes < 10) ? ":0" : ":") + minutes;
 timeValue += (hours >= 12) ? " 下午 " : " 上午 ";
 
@@ -103,10 +33,10 @@ this.length=initArray.arguments.length
 for(var i=0;i<this.length;i++)
 this[i+1]=initArray.arguments[i]  }
 
-var d=new initArray("<span>星期日</span>","<span>星期一</span>","<span>星期二</span>","<span>星期三</span>","<span>星期四</span>","<span>星期五</span>","<span>星期六</span>"); 
+var d=new initArray("<span>星期日</span>","<span>星期一</span>","<span>星期二</span>","<span>星期三</span>","<span>星期四</span>","<span>星期五</span>","<span>星期六</span>");
 
-document.write(today.getFullYear(),"年",today.getMonth()+1,"月",today.getDate(),"日 ",d[today.getDay()+1]," ",timeValue); 
-//-->
+document.write(today.getFullYear(),"年",today.getMonth()+1,"月",today.getDate(),"日 ",d[today.getDay()+1]," ",timeValue);
+
 </script>
 
 <SCRIPT LANGUAGE=JavaScript src="js/28xldete.js">
@@ -115,96 +45,54 @@ document.write(today.getFullYear(),"年",today.getMonth()+1,"月",today.getDate(
 <SCRIPT LANGUAGE=JavaScript type=text/javascript>CAL();
 </SCRIPT>
 <!--***农历结束****-->
-<style >
-	a {text-decoration:none}
-</style>
- 
 
 
- 
-
-
-
-
-<div style="font-size: 350% ;text-align: center; padding-top: 110px; font-family:MicroSoft YaHei">
+<div style="font-size: 350% ;text-align: center; padding-top: 110px;padding-bottom: 60px;font-family:MicroSoft YaHei">
 <p>
 	<strong>
-     李书斌的个人网页 
-     <p style="margin-bottom: 0;font-size: 100%;">
-     	测试
-     </p> 
+     李书斌的个人网页   <br><br>   	测试
     </strong>
-
 </p>
 </div>
-<div style="text-decoration:none outline: none;width: 180px;height: 60px; border-radius: 10px;background-color: #faaa9b;margin: auto;">
-<a href="dingdian.html">
-	<div style="margin-top: 0; padding-top:15px;text-align: center; color: #ff0;font-size: 25px;font-family: cursive">
+<div style="width: 180px;height: 60px; border-radius: 10px;background-color: #faaa9b;margin:auto;">
+ <a href="dingdian.html">
+	<div style="line-height: 60px;text-align: center; color: #ff0;font-size: 25px;font-family: cursive">
 		<strong>
 	小说模块网页
 	    </strong>
-	</div>	
-</a>
+	</div>
+ </a>
 </div>
+
 </div>
 
-
-
-
-
-
-
-
-
-
-<div style=" position: relative;  background-color: #254;width: 100%;margin-top:249px;">
+<div style=" position: relative;background-color: #254;width: 100%;margin-top:155px;">
 <div style="padding-top: 20px; font-size: 200% ;text-align: center;  font-family: cursive" >
-
-
 	<p>
 		成年人的世界
 	</p>
 </div>
-<div style=" text-align: center; padding-top: 0; ">
-	<!-- <img src="https://github.com/binlang-growing/binlang.github.io/image/成年人的悲伤.jpg"> -->
+<div style=" text-align: center;  ">
 	<img src="image/成年人的悲伤1.jpg"><br>
-
 	<img src="image/成年人的悲伤2.jpg"><br>
-
 	<img src="image/成年人的悲伤3.jpg"><br>
-
 	<img src="image/成年人的悲伤4.jpg"><br>
-
 	<img src="image/成年人的悲伤5.jpg"><br>
-
 	<img src="image/成年人的悲伤6.jpg"><br>
-
 	<img src="image/成年人的悲伤7.jpg"><br>
-
 	<img src="image/成年人的悲伤8.jpg"><br>
-
 	<img src="image/成年人的悲伤9.jpg"><br>
-
 	<img src="image/成年人的悲伤10.jpg"><br>
-
 	<img src="image/成年人的悲伤11.jpg"><br>
-
 	<img src="image/成年人的悲伤12.jpg"><br>
-
 	<img src="image/成年人的悲伤13.jpg"><br>
-
 </div>
+
 <div style=" margin-top: 1%; text-align: center; padding-bottom:1%;">
-	<a href="#">
-		the end 
-	</a>
+<a href="#">	the end	</a>
 </div>
 
 </div>
-
-
-
-
 
 </div>
 
