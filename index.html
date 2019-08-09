@@ -1,24 +1,26 @@
-<html >
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
-<meta charset="utf-8">
-
+<!DOCTYPE html>
+<html>
 <head>
-<title>主页</title>
-<link rel="stylesheet" type="text/css" href="css/主页.css">
-<link rel="javascript" type="text/js" href="js/主页.js">
-<link rel="javascript" type="text/js" href="js/jquery-3.4.1.js">
-
-<meta name="webname" content="小说" />
+	<title>主页</title>
 </head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/js" href="jquery-3.4.1.js">
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/js" href="js/主页.js">
 <body style="margin: 0;">
-
 <div id="video">
-    <div class="video-container">
-      <video autoplay loop muted playsinline src="images\动态背景资源\视频背景.mp4"> </video>
-    </div>
+	<video 
+        autoplay = true; // 自动播放
+		loop = true; // 循环播放
+		muted=true; // 关闭声音，如果为false,视频无法自动播放
+		
+	  src="images\动态背景资源\视频背景.mp4" >	
+	</video>
+</div>
 
-<div id="wenzi">
-<!-- 时间显示块 -->
+
+<div id="time">
+	<!-- 时间显示块 -->
 <script language="JavaScript" style="padding-right: 100px;">
 today=new Date();
 var hours = today.getHours();
@@ -45,33 +47,31 @@ document.write(today.getFullYear(),"年",today.getMonth()+1,"月",today.getDate(
 <SCRIPT LANGUAGE=JavaScript type=text/javascript>CAL();
 </SCRIPT>
 <!--***农历结束****-->
-
-
-<div style="font-size: 350% ;text-align: center; padding-top: 110px;padding-bottom: 60px;font-family:MicroSoft YaHei">
-<p>
-	<strong>
-     李书斌的个人网页   <br><br>   	测试
-    </strong>
-</p>
 </div>
-<div style="width: 180px;height: 60px; border-radius: 10px;background-color: #faaa9b;margin:auto;">
- <a href="dingdian.html">
-	<div style="line-height: 60px;text-align: center; color: #ff0;font-size: 25px;font-family: cursive">
-		<strong>
-	小说模块网页
-	    </strong>
+<div id="home">
+
+	<div class="one">
+	李书斌的个人主页<br>
+	测试版
 	</div>
- </a>
+	    <div class="dom1">
+	    	<a href="Sentiment/one.html";>
+    	每周感悟
+    	    </a>
+        </div>
+        <div class="dom2">
+        	<a href="xiaoshuo/one.html">
+        	小说转载更新
+        	</a>
+        </div>
 </div>
+<!-- <div id="els">
+    <div class="sad">
+    	悲伤
+    </div>
 
-</div>
-
-<div style=" position: relative;background-color: #254;width: 100%;margin-top:155px;">
-<div style="padding:20px; font-size: 200% ;text-align: center;  font-family: cursive" >
-		成年人的世界
-</div>
-<div style=" text-align: center;  ">
-	<img src="image/成年人的悲伤1.jpg"><br>
+    <div class="image">
+    <img src="image/成年人的悲伤1.jpg"><br>
 	<img src="image/成年人的悲伤2.jpg"><br>
 	<img src="image/成年人的悲伤3.jpg"><br>
 	<img src="image/成年人的悲伤4.jpg"><br>
@@ -84,15 +84,10 @@ document.write(today.getFullYear(),"年",today.getMonth()+1,"月",today.getDate(
 	<img src="image/成年人的悲伤11.jpg"><br>
 	<img src="image/成年人的悲伤12.jpg"><br>
 	<img src="image/成年人的悲伤13.jpg"><br>
+    </div> -->
+    <div class="home">
+    	the end
+    </div>
 </div>
-
-<div style=" margin-top: 1%; text-align: center; padding-bottom:1%;">
-<a href="#">	the end	</a>
-</div>
-
-</div>
-
-</div>
-
 </body>
 </html>
