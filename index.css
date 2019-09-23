@@ -1,4 +1,4 @@
-a {text-decoration-style: none}
+a{ text-decoration:none} 
 #video	{margin: 0;
 	     position: absolute;
 	     z-index: -999;
